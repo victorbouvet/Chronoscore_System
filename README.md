@@ -20,3 +20,17 @@ This function receives as input :
 - VGA TEST which sends the test images to the VGA screen 
 
 And at the output, we have all the anodes (8 in total) and the leds (8 in total) as well as HSYNCH and VSYNCH which manage the horizontal and vertical synchronization, but also RED, BLUE and GREEN the color pixels.
+
+There is a multitude of sub-blocks composing chronoscore including three sequential logic blocks, that is to say two AND gates, which allow the incrementation and the pause, and a NOT gate, which allows the reset of the chronometer
+
+There is the sub-block chronometer which allows to manage the chronometer of the soccer game, the sub-block score which gives the scores of the teams, the sub-block display which allows to display on the displays, the sub-block timeGenerator returns the various clocks, and finally the sub-block vgaDisplay which manages the display on big screen.
+
+There is a multitude of sub-blocks composing chronoscore including three sequential logic blocks, that is to say two AND gates, which allow the incrementation and the pause, and a NOT gate, which allows the reset of the chronometer
+
+There is :
+- the sub-block chronometer which allows to manage the chronometer of the soccer game,
+- the sub-block score which gives the scores of the teams,
+- the sub-block display which allows to display on the displays, 
+- the sub-block timeGenerator returns the various clocks, 
+- the sub-block vgaDisplay which manages the display on big screen.
+
