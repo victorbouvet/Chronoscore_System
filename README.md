@@ -21,7 +21,7 @@ This function receives as input :
 - VGA ONOFF which turns on the VGA screen
 - VGA TEST which sends the test images to the VGA screen 
 
-And at the output, we have all the anodes (8 in total) and the leds (8 in total) as well as HSYNCH and VSYNCH which manage the horizontal and vertical synchronization, but also RED, BLUE and GREEN the color pixels.
+And at the output, we have all the anodes (8 in total) and the leds (8 in total) SCORE and TEMPS (respectively for the score and the chronometer) as well as HSYNCH and VSYNCH which manage the horizontal and vertical synchronization, but also RED, BLUE and GREEN the color pixels.
 ![Screenshot_20220815-220850_Docs](https://user-images.githubusercontent.com/91113788/184709869-c5466e85-9cde-4bb1-a7d8-0dd4cf185838.jpg)
 
 There is a multitude of sub-blocks composing chronoscore including three sequential logic blocks, that is to say two AND gates, which allow the incrementation and the pause, and a NOT gate, which allows the reset of the chronometer
