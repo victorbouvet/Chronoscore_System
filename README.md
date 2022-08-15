@@ -7,7 +7,9 @@ This project was to implement a multiplexed scoring and timing system that would
 - Display of the score and the elapsed time on a 7-segment display
 
 ## Chronoscore architecture
-![Screenshot_20220815-220850_Docs](https://user-images.githubusercontent.com/91113788/184709869-c5466e85-9cde-4bb1-a7d8-0dd4cf185838.jpg)
+
+![Screenshot_20220815-220832_Docs](https://user-images.githubusercontent.com/91113788/184711148-014af828-a47c-4866-85d6-ab73fba7d422.jpg)
+
 This function receives as input :
 - GCLK an oscillator generating a frequency of 100 MHz
 - START which starts the chronometer
@@ -20,6 +22,7 @@ This function receives as input :
 - VGA TEST which sends the test images to the VGA screen 
 
 And at the output, we have all the anodes (8 in total) and the leds (8 in total) as well as HSYNCH and VSYNCH which manage the horizontal and vertical synchronization, but also RED, BLUE and GREEN the color pixels.
+![Screenshot_20220815-220850_Docs](https://user-images.githubusercontent.com/91113788/184709869-c5466e85-9cde-4bb1-a7d8-0dd4cf185838.jpg)
 
 There is a multitude of sub-blocks composing chronoscore including three sequential logic blocks, that is to say two AND gates, which allow the incrementation and the pause, and a NOT gate, which allows the reset of the chronometer
 
