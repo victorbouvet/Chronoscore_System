@@ -37,3 +37,17 @@ There is :
 - the sub-block timeGenerator returns the various clocks, 
 - the sub-block vgaDisplay which manages the display on big screen.
 
+## Method of implementation and testing of chronoscore
+
+We implemented chronoscore with the blocks we created (score, display and chronometer) as well as those provided (vgaDisplay and timeGenerator). We used the Implement Design tool and Create Programming File from Xilinx to then put the program on the board with the IMPACT tool. 
+ 
+We then have the different functionalities requested by the specifications (score management, start and pause of the timer, stop the timer after 45 minutes, reset the timer and the score of both teams).
+ 
+The Xilinx Design Summary tool indicates that the chronoscore is useful for 31 IOBs (Input/Output Bounds) out of the 210 available on the FPGA board, i.e. 15%. The program uses few I/Os which shows us that the program is fast, the lower the number of IOBs the faster the program will be. The program is an I/O Bound because it depends on external information (push buttons, switches).
+
+## Conclusion
+
+We did not encounter any particular problem, we succeeded in having a functional stopwatch and a score management respecting the specifications.    
+We could improve the program so that we don't have to reset the stopwatch at the end of the 45 minutes in order to manage the second half. It would be interesting to propose another duration for other sports, for example, basketball has 4 quarters of 12 minutes. We could have a more flexible stopwatch that is suitable for several sports at the same time.
+
+We did not address the display of the score and the timer on a screen that should have been managed by the vgaDisplay block. This would allow the score and time to be displayed to the public on a large LCD screen in the stadium.
