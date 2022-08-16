@@ -34,8 +34,14 @@ There is a multitude of sub-blocks composing chronoscore including three sequent
 
 There is :
 - the sub-block chronometer which allows to manage the chronometer of the soccer game,
+![](synoptics/chronometer.jpg)
+
 - the sub-block score which gives the scores of the teams,
+![](synoptics/score.jpg)
+
 - the sub-block display which allows to display on the displays, 
+![](synoptics/display.jpg)
+
 - the sub-block timeGenerator returns the various clocks, 
 - the sub-block vgaDisplay which manages the display on big screen.
 
