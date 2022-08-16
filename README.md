@@ -6,7 +6,8 @@ This project was to implement a multiplexed scoring and timing system that would
 - Counting of the elapsed time with stop at half-time
 - Display of the score and the elapsed time on a 7-segment display
 
-## Chronoscore architecture
+## Presentation of the FPGA development board
+Digilent's NEXYs A7 board is an FPGA development board that uses Xilinx's Artix 7 architecture.
 
 ![Screenshot_20220815-220832_Docs](https://user-images.githubusercontent.com/91113788/184711148-014af828-a47c-4866-85d6-ab73fba7d422.jpg)
 Several switches and buttons are used:
@@ -15,6 +16,7 @@ Several switches and buttons are used:
 - the BPreset button is used to reset the score of both teams
 - the switches START, Wait_t are used to start and pause the chronometer
 
+## Chronoscore architecture
 ![Screenshot_20220815-220850_Docs](https://user-images.githubusercontent.com/91113788/184709869-c5466e85-9cde-4bb1-a7d8-0dd4cf185838.jpg)
 
 We did not work on the timeGenerator and vgaDisplay blocks (provided by the teachers).
