@@ -9,6 +9,15 @@ This project was to implement a multiplexed scoring and timing system that would
 ## Chronoscore architecture
 
 ![Screenshot_20220815-220832_Docs](https://user-images.githubusercontent.com/91113788/184711148-014af828-a47c-4866-85d6-ab73fba7d422.jpg)
+Several switches and buttons are used:
+- the RESET button is used to reset the chronometer
+- the BPV (resp. BPL) button is used to increment the score of the visiting team (resp. home team) by one point
+- the BPreset button is used to reset the score of both teams
+- the switches START, Wait_t are used to start and pause the chronometer
+
+![Screenshot_20220815-220850_Docs](https://user-images.githubusercontent.com/91113788/184709869-c5466e85-9cde-4bb1-a7d8-0dd4cf185838.jpg)
+
+We did not work on the timeGenerator and vgaDisplay blocks (provided by the teachers).
 
 This function receives as input :
 - GCLK an oscillator generating a frequency of 100 MHz
@@ -22,9 +31,6 @@ This function receives as input :
 - VGA TEST which sends the test images to the VGA screen 
 
 And at the output, we have all the anodes (8 in total) and the leds (8 in total) SCORE and TEMPS (respectively for the score and the chronometer) as well as HSYNCH and VSYNCH which manage the horizontal and vertical synchronization, but also RED, BLUE and GREEN the color pixels.
-![Screenshot_20220815-220850_Docs](https://user-images.githubusercontent.com/91113788/184709869-c5466e85-9cde-4bb1-a7d8-0dd4cf185838.jpg)
-
-We did not work on the timeGenerator and vgaDisplay blocks (provided by the teachers).
 
 There is a multitude of sub-blocks composing chronoscore including three sequential logic blocks, that is to say two AND gates, which allow the incrementation and the pause, and a NOT gate, which allows the reset of the chronometer
 
