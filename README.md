@@ -10,6 +10,8 @@ This project was to implement a multiplexed scoring and timing system that would
 
 ![Screenshot_20220815-220832_Docs](https://user-images.githubusercontent.com/91113788/184711148-014af828-a47c-4866-85d6-ab73fba7d422.jpg)
 
+We did not work on the timeGenerator and vgaDisplay blocks (provided by the teachers).
+
 This function receives as input :
 - GCLK an oscillator generating a frequency of 100 MHz
 - START which starts the chronometer
