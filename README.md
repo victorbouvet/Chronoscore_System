@@ -1,4 +1,6 @@
 # Football chronoscore system
+##### 16 hours of practical work (VHDL codes, testbenches, analysis of simulations, implementation on board, testing of the program on the board) + writing a summary report
+
 The objective of this project was to create a scoring system for a local and visiting team during a soccer game. Moreover, it was necessary to have a stopwatch of 45min (duration of a half-time).
 
 This project was to implement a multiplexed scoring and timing system that would meet the following criteria
